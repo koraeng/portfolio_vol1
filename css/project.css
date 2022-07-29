@@ -9,6 +9,8 @@
 	text-align: $text-align;
 }
 
+
+
 body { 
     font-family:"Montserrat", "Noto Sans KR", sans-serif;
     font-size:14px;
@@ -692,9 +694,6 @@ button {
 
 
 
-
-
-
 /************ #s3 ***************/
 
 #s3 {
@@ -711,7 +710,7 @@ button {
 .s3_title_w {
     width:45vw;
     height:100vh;
-    background:#ebe7e47a;
+    background:#978774;
 }
 
 .s3_title {
@@ -725,7 +724,7 @@ button {
     margin-bottom:3vh;
     font-size:1.7vw;
     font-weight:300; 
-    color:#555;
+    color:#fff;
 }
 
 
@@ -736,7 +735,7 @@ button {
     margin-bottom:3vh;
     font-size:3.7vw;
     font-weight: 700; 
-    color:#7f8f89;
+    color:#fff;
 }
 
 .s3_desc {
@@ -751,7 +750,7 @@ button {
     font-size:1.2vw;
     font-weight:700; 
     line-height:1.3;
-    color:#95aaa3;
+    color:#fff;
 }
 
 .s3_desc1 > span {
@@ -760,7 +759,7 @@ button {
     font-size:.9vw;
     font-weight:300; 
     line-height:1.3;
-    color:#555;
+    color:#fff;
 }
 
 .s3_desc2 > h2 {
@@ -769,7 +768,7 @@ button {
     font-size:1.2vw;
     font-weight:700; 
     line-height:1.3;
-    color:#95aaa3;
+    color:#fff;
 }
 
 .s3_desc2 > span {
@@ -778,7 +777,7 @@ button {
     font-size:.9vw;
     font-weight:300; 
     line-height:1.3;
-    color:#555;
+    color:#fff;
 }
 
 .s3_desc3 > h2 {
@@ -787,10 +786,266 @@ button {
     font-size:1.2vw;
     font-weight:700; 
     line-height:1.3;
-    color:#95aaa3;
+    color:#fff;
 }
 
 .s3_desc3 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#fff;
+}
+
+
+.s3_desc > .frame {
+    width: 90%;
+    margin-top:9vh;
+}
+
+.s2_desc > button {
+    outline: none;
+}
+
+.s3_desc > .custom-btn {
+    width: 170px;
+    height: 55px;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.btn-2 {
+    background: #fff;
+    color: #111;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-2 span a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top:5px;
+    color:#111;
+    font-size:0.82vw;
+}
+
+.btn-2 span a:hover {
+    color:#fff
+}
+
+.btn-2:before,
+.btn-2:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #fff;
+}
+
+.btn-2:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-2:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-2:hover{
+    color: #fff;
+    background: transparent;
+}
+
+.btn-2:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-2:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-2 span:before,
+.btn-2 span:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+}
+
+.btn-2 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-2 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-2 span:hover:before {
+    width: 100%;
+}
+.btn-2 span:hover:after {
+    width: 100%;
+}
+
+
+
+.img_wrap {
+    position:relative;
+    bottom:100vh;
+    left:45vw;
+    width:55vw;
+    height:100vh;
+    object-fit:contain;
+}
+
+
+.s3_image  {
+    position:absolute;
+    top:0;
+    right:0;
+    width:55vw;
+    height:100vh;
+    background:url('../img/lotte.png') no-repeat top / cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ #s4 ***************/
+
+#s4 {
+    position:relative; 
+}
+
+.s4_w {
+    width:100vw;
+    height:100vh;
+}
+
+.s4_in {}
+
+.s4_title_w {
+    width:45vw;
+    height:100vh;
+    background:#ebe7e47a;
+}
+
+.s4_title {
+    width:55vw;
+}
+
+.s4_title > h3 {
+    position:absolute;
+    top:21vh;
+    left:4vw;
+    margin-bottom:3vh;
+    font-size:1.7vw;
+    font-weight:300; 
+    color:#555;
+}
+
+
+.s4_title > h2 {
+    position:absolute;
+    top:25vh;
+    left:4vw;
+    margin-bottom:3vh;
+    font-size:3.7vw;
+    font-weight: 700; 
+    color:#7f8f89;
+}
+
+.s4_desc {
+    width:45vw;
+    position:absolute;
+    top:45vh;
+    left:4vw;
+}
+
+.s4_desc1 > h2 {
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#95aaa3;
+}
+
+.s4_desc1 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#555;
+}
+
+.s4_desc2 > h2 {
+    margin-top:6vh;
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#95aaa3;
+}
+
+.s4_desc2 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#555;
+}
+
+.s4_desc3 > h2 {
+    margin-top:6vh;
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#95aaa3;
+}
+
+.s4_desc3 > span {
     font-family:"Noto Sans KR", sans-serif;
     position:absolute;
     font-size:.9vw;
@@ -800,16 +1055,16 @@ button {
 }
 
 
-.s3_desc > .frame {
+.s4_desc > .frame {
     width: 90%;
     margin-top:9vh;
 }
 
-.s3_desc > button {
+.s4_desc > button {
     outline: none;
 }
 
-.s3_desc > .custom-btn {
+.s4_desc > .custom-btn {
     width: 170px;
     height: 55px;
     padding: 10px 25px;
@@ -923,7 +1178,7 @@ button {
 }
 
 
-.s3_image  {
+.s4_image  {
     position:absolute;
     top:0;
     right:0;
@@ -937,30 +1192,30 @@ button {
 
 
 
-/************ #s4 ***************/
+/************ #s5 ***************/
 
-#s4 {
+#s5 {
     position:relative; 
 }
 
-.s4_w {
+.s5_w {
     width:100vw;
     height:100vh;
 }
 
-.s4_in {}
+.s5_in {}
 
-.s4_title_w {
+.s5_title_w {
     width:45vw;
     height:100vh;
     background:#802990;
 }
 
-.s4_title {
+.s5_title {
     width:55vw;
 }
 
-.s4_title > h3 {
+.s5_title > h3 {
     position:absolute;
     top:21vh;
     left:4vw;
@@ -971,7 +1226,7 @@ button {
 }
 
 
-.s4_title > h2 {
+.s5_title > h2 {
     position:absolute;
     top:25vh;
     left:4vw;
@@ -981,14 +1236,14 @@ button {
     color:#fff;
 }
 
-.s4_desc {
+.s5_desc {
     width:45vw;
     position:absolute;
     top:45vh;
     left:4vw;
 }
 
-.s4_desc1 > h2 {
+.s5_desc1 > h2 {
     margin-bottom:1vh;
     font-size:1.2vw;
     font-weight:700; 
@@ -996,7 +1251,7 @@ button {
     color:#fff;
 }
 
-.s4_desc1 > span {
+.s5_desc1 > span {
     font-family:"Noto Sans KR", sans-serif;
     position:absolute;
     font-size:.9vw;
@@ -1005,7 +1260,7 @@ button {
     color:#fff;
 }
 
-.s4_desc2 > h2 {
+.s5_desc2 > h2 {
     margin-top:6vh;
     margin-bottom:1vh;
     font-size:1.2vw;
@@ -1014,7 +1269,7 @@ button {
     color:#fff;
 }
 
-.s4_desc2 > span {
+.s5_desc2 > span {
     font-family:"Noto Sans KR", sans-serif;
     position:absolute;
     font-size:.9vw;
@@ -1023,7 +1278,7 @@ button {
     color:#fff;
 }
 
-.s4_desc3 > h2 {
+.s5_desc3 > h2 {
     margin-top:6vh;
     margin-bottom:1vh;
     font-size:1.2vw;
@@ -1032,7 +1287,7 @@ button {
     color:#fff;
 }
 
-.s4_desc3 > span {
+.s5_desc3 > span {
     font-family:"Noto Sans KR", sans-serif;
     position:absolute;
     font-size:.9vw;
@@ -1042,16 +1297,16 @@ button {
 }
 
 
-.s4_desc > .frame {
+.s5_desc > .frame {
     width: 90%;
     margin-top:9vh;
 }
 
-.s4_desc > button {
+.s5_desc > button {
     outline: none;
 }
 
-.s4_desc > .custom-btn {
+.s5_desc > .custom-btn {
     width: 170px;
     height: 55px;
     padding: 10px 25px;
@@ -1164,7 +1419,7 @@ button {
     object-fit:contain;
 }
 
-.s4_image  {
+.s5_image  {
     position:absolute;
     top:0;
     right:0;
@@ -1172,6 +1427,251 @@ button {
     height:100vh;
     background:url('../img/tiretech.png') no-repeat top / cover;
 }
+
+
+
+
+
+
+
+
+/************ #s6 ***************/
+
+#s6 {
+    position:relative; 
+}
+
+.s6_w {
+    width:100vw;
+    height:100vh;
+}
+
+.s6_in {}
+
+.s6_title_w {
+    width:45vw;
+    height:100vh;
+    background:#6ec2f6;
+}
+
+.s6_title {
+    width:55vw;
+}
+
+.s6_title > h3 {
+    position:absolute;
+    top:21vh;
+    left:4vw;
+    margin-bottom:3vh;
+    font-size:1.7vw;
+    font-weight:300; 
+    color:#fff;
+}
+
+
+.s6_title > h2 {
+    position:absolute;
+    top:25vh;
+    left:4vw;
+    margin-bottom:3vh;
+    font-size:3.7vw;
+    font-weight: 700; 
+    color:#fff;
+}
+
+.s6_desc {
+    width:45vw;
+    position:absolute;
+    top:45vh;
+    left:4vw;
+}
+
+.s6_desc1 > h2 {
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#fff;
+}
+
+.s6_desc1 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#fff;
+}
+
+.s6_desc2 > h2 {
+    margin-top:6vh;
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#fff;
+}
+
+.s6_desc2 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#fff;
+}
+
+.s6_desc3 > h2 {
+    margin-top:6vh;
+    margin-bottom:1vh;
+    font-size:1.2vw;
+    font-weight:700; 
+    line-height:1.3;
+    color:#fff;
+}
+
+.s6_desc3 > span {
+    font-family:"Noto Sans KR", sans-serif;
+    position:absolute;
+    font-size:.9vw;
+    font-weight:300; 
+    line-height:1.3;
+    color:#fff;
+}
+
+
+.s6_desc > .frame {
+    width: 90%;
+    margin-top:9vh;
+}
+
+.s6_desc > button {
+    outline: none;
+}
+
+.s6_desc > .custom-btn {
+    width: 170px;
+    height: 55px;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.btn-4 {
+    background: #fff;
+    color: #111;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-4 span a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top:5px;
+    color:#111;
+    font-size:0.82vw;
+}
+
+.btn-4 span a:hover {
+    color:#fff
+}
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #fff;
+}
+
+.btn-4:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-4:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-4:hover{
+    color: #fff;
+    background: transparent;
+}
+
+.btn-4:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+}
+
+.btn-4 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-4 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-4 span:hover:before {
+    width: 100%;
+}
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+.img_wrap {
+    position:relative;
+    bottom:100vh;
+    left:45vw;
+    width:55vw;
+    height:100vh;
+    object-fit:contain;
+}
+
+.s6_image  {
+    position:absolute;
+    top:0;
+    right:0;
+    width:55vw;
+    height:100vh;
+    background:url('../img/asan.png') no-repeat top / cover;
+}
+
+
 
 
 

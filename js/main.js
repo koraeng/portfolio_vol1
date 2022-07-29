@@ -17,11 +17,6 @@ new fullpage('#fullpage', {
 
 
 
-(function($){
-    new WOW().init();
-})(jQuery);
-
-
 
 
 //모바일 상태에서 햄버거 버튼을 누르면 사이드바가 열리고 닫힘
@@ -49,3 +44,9 @@ $(window).resize(function(){
 
 
 
+
+// Skills Bars
+$('.skill-percent').each(function(){
+    $(this).animate({
+      width:$(this).attr('data-percent')},"fast");
+    });

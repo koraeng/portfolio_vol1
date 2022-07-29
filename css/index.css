@@ -1,13 +1,6 @@
 @charset "UTF-8";
-@mixin position-center($text-align: center) {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	text-align: $text-align;
-}
+
+
 
 body { 
     font-family:"Montserrat", "Noto Sans KR", sans-serif;
@@ -96,8 +89,8 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
     overflow:hidden;
 
 	transform-origin: 50% 50%;
@@ -136,7 +129,7 @@ header {
 		-webkit-transform:rotate(0deg);
 	}
 	to {
-		-webkit-transform:rotate(360deg);
+		-webkit-transform:rotate(270deg);
 	}
 }
 
@@ -322,7 +315,7 @@ header {
     font-size:1.25vw;
     color:#fff;
     line-height:1.4;
-    margin-top:18vh;
+    margin-top:8vh;
     margin-left:8vw;
 }
 
@@ -331,12 +324,6 @@ header {
     justify-content:space-between;
 }
 
-.s2_item > h2 {
-    font-size:1.2vw;
-    font-weight:700;
-    margin-bottom:0.3vw;
-    color:#8ccdff;
-}
 
 
 .s2_list_r1, .s2_list_r2,  .s2_list_rb {
@@ -347,7 +334,7 @@ header {
 
 
 .s2_item p {
-    font-size:.9vw;
+    font-size:1.2vw;
     color:#fff;
     line-height:1.3;
     margin-bottom:1.5vw;
@@ -355,14 +342,15 @@ header {
 
 
 .s2_item > h2 {
-    font-size:1.2vw;
+    font-size:1.6vw;
+    color:#69ffe6;
     font-weight:700;
     margin-bottom:0.3vw;
 }
 
 
 .s2_item p {
-    font-size:.9vw;
+    font-size:1.2vw;
     color:#fff;
     line-height:1.3;
     margin-bottom:1.5vw;
@@ -373,7 +361,7 @@ header {
     position:absolute;
     top:25vh;
     left:52vw;
-    background:url('../img/na.jpg') no-repeat 50% 50% / contain;
+    background:url('../img/23.jpg') no-repeat 50% 50% / contain;
     width:35vw;
     height:65vh;
 }
@@ -442,9 +430,9 @@ header {
 
 
 .s2_image {
-    background:url('../img/na.jpg') no-repeat 50% 50% / contain;
+    background:url('../img/23.jpg') no-repeat 50% 50% / contain;
     width:35vw;
-    height:65vh;
+    height:75vh;
 }
 
 
@@ -515,14 +503,26 @@ header {
 
 
 
-/************ #s3 ***************/
 
 #s3 {
     position:relative; 
-    background:#111; 
+    top:0;
+    left:0;
+    width:100vw;
+    background:#111;
 }
 
-.s3_title > h2 {
+
+#s3 .container {
+    position:absolute;
+    top:42vh;
+    left:8vw;
+    width:55vw;
+    font-family:"Montserrat", sans-serif;
+    margin:0 auto;
+}
+
+#s3 h2 {
     position:absolute;
     top:10vh;
     left:8vw;
@@ -533,140 +533,94 @@ header {
     color:#fff;
 }
 
-
-
-.wrapper {
+#s3 .desc {
     position:absolute;
-    top:38vh;
-    left:8vw;
-    width:55vw;
-    font-family:"Montserrat", sans-serif;
-    margin:0 auto;
+    top:14vh;
+    font-family:"Noto Sans KR", sans-serif;
+    font-weight:300;
+    font-size:1.25vw;
+    color:#fff;
+    line-height:1.4;
+    margin-top:8vh;
+    margin-left:8vw;
 }
 
-.skill {
-    margin-bottom:4vh;
+
+.skills-title.underline:before {
+    width: 40px;
+}
+
+  .skills-list {
+    overflow: hidden;
     position: relative;
-    overflow-x:hidden;
-        
+    z-index: 10
 }
 
-.skill > p {
-    font-size:1.1vw;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom:.8vw;
+.skill-name {
+    color:#fff;
+    font-weight:500;
+    font-size:1.3vw;
 }
 
-.skill:before {
-    width: 100%;
-    height: 5px;
-    content: "";
+.skill-name:after {
+    background-color: #fff;
+    content: '';
     display: block;
-    position: absolute;
-    background: #fff;
-    bottom: 0;
-}
-
-.skill-bar {
+    height:1.7vw;
+    position: relative;
+    top: 3px;
+    /*top: 1rem;*/
     width: 100%;
-    height: 5px;
-    background:#0091ff;
-    display: block;
-    position: relative;
 }
 
-/* SKILL 1 */
-.skill1{
-    width: 95%;
-        
+.skill-percent {
+    font-size: 0;
+    height:1.7vw;
+    position: relative;
+    top: -1.55vw;
+    transition: 3s linear;
+    width: 0;
 }
-.skill-bar span {
+
+/* SKILL BAR COLORS */
+
+  .skill-percent-html {
+    background-color: #0091ff;
+  }
+  .skill-percent-css {
+    background-color: #05deff;
+  }
+  .skill-percent-jquery {
+    background-color: #69ffe6;
+  }
+
+  .skill-percent-javascript {
+    background-color: #aeffe9;
+  }
+  .skill-percent-wordpress {
+    background-color: #05deff;
+  }
+  .skill-percent-php {
+    background-color: #0091ff;
+  }
+
+  
+  /* Heading Underline */
+  
+  .underline {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline:before {
+    background-color: #fff;
+    bottom: -15px;
+    content: '';
+    height: 2px;
+    left: 0;
     position: absolute;
-    border-top: 5px solid #fff;
-    top: -30px;
-    margin-bottom:.8vw;
-    font-size: 18px;
-    padding: 3px 0;
-    font-weight: 500;
-}
-
-.skill-bar {
-    position: relative;
-        
-}
-
-.skill1 .skill-count1 {
-    right: 0;
-    color:#fff;
-}
-
-/* SKILL 2 */
-.skill2{
-    width: 85%;
-}
-
-.skill2 .skill-count2 {
-    right: 0;
-    color:#fff;
-}
-
-/* SKILL 3 */
-.skill3{
-    width: 75%;
-}
-
-.skill3 .skill-count3 {
-    right: 0;
-    color:#fff;
-}
-
-/* SKILL 4 */
-.skill4{
-    width: 65%
-}
-
-.skill4 .skill-count4 {
-    right: 0;
-    color:#fff;
-}
-
-/* SKILL 5 */
-.skill5{
-    width: 80%;
-}
-
-.skill5 .skill-count5 {
-    right: 0;
-    color:#fff;
-}
-
-/* SKILL 6 */
-.skill6{
-    width: 90%
-}
-
-.skill6 .skill-count6 {
-    right: 0;
-    color:#fff;
-}
-
-/* GITHUB SOURCE STYLE  */
-.github-source{
-float:right;
-display:block;
-color:#0091ff;
-margin:0 20px;
-position: relative;
-z-index:999999;
-top:0;
-}
-
-.github-source i{
-font-size:50px;
-color:#fff
-}
-
+    width: 110%;
+  }
 
 
 

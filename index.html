@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/index.css">
@@ -15,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/iscroll.js"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -114,79 +114,52 @@
 
             <div id="txt_container">
                 <div id="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                    <defs>
-                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
-                    </defs>
-                    <circle cx="150" cy="100" r="75" fill="none"/>
-                    <g>
-                        <use xlink:href="#circlePath" fill="none"/>
-                        <text fill="#fff">
-                            <textPath xlink:href="#circlePath">YERIN HAN - 1994.09.22 AGE 29</textPath>
-                        </text>
-                    </g>
-                </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                        <defs>
+                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                        </defs>
+                        <circle cx="150" cy="100" r="75" fill="none"/>
+                        <g>
+                            <use xlink:href="#circlePath" fill="none"/>
+                            <text fill="#fff">
+                                <textPath xlink:href="#circlePath">YERIN HAN - 1994.09.22 AGE 29</textPath>
+                            </text>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </div>
 
-
+        
         <div class="section" id="s3">
-            <div class="s3_w">
-                <div class="s3_in">
-                    <div class="s3_title_w">
-                        <div class="s3_title">
-                            <h2>Useable Tools</h2>
-                            <div class="bar"></div>
+            <h2>Useable Tools</h2>
+            <div class="bar"></div>
+            <p class="desc">현재 다룰 수 있는 skill입니다.<br>
+            이 외에도  Sass, Vue, Git, Zeplin 등 생산성과 협업을 위한<br>지식을 계속 공부하고 있습니다.📚</p>
+            <div class="container">
+                <div class="container-fluid" id="skills">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        <div class="skills-text">
+                            <dl class="skills-list">
+                                <dt class="skill-name">HTML</dt>
+                                <dd class="skill-percent skill-percent-html" data-percent="90%"></dd>
+                                <dt class="skill-name">CSS</dt>
+                                <dd class="skill-percent skill-percent-css" data-percent="88%"></dd>
+                                <dt class="skill-name">jQuery</dt>
+                                <dd class="skill-percent skill-percent-jquery" data-percent="48%"></dd>
+                                <dt class="skill-name">Javascript</dt>
+                                <dd class="skill-percent skill-percent-javascript" data-percent="48%"></dd>
+                                <dt class="skill-name">Photoshop</dt>
+                                <dd class="skill-percent skill-percent-wordpress" data-percent="90%"></dd>
+                                <dt class="skill-name">Illustrator</dt>
+                                <dd class="skill-percent skill-percent-php" data-percent="95%"></dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <a class="github-source" href="https://github.com/speeedsam/CSS3-Animated-Skill-Prograss-bar"  target="_blank"><i class="fa fa-github"></i></a>
-            <div class="wrapper">
-                    <div class="skill">
-                        <p>HTML5</p>
-                        <div class="skill-bar skill1 wow slideInLeft animated">
-                            <span class="skill-count1">95%</span>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <p>CSS3</p>
-                        <div class="skill-bar skill2 wow slideInLeft animated">
-                            <span class="skill-count2">85%</span>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <p>JQUERY</p>
-                        <div class="skill-bar skill3 wow slideInLeft animated">
-                            <span class="skill-count3">75%</span>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <p>JAVASCRIP</p>
-                        <div class="skill-bar skill4 wow slideInLeft animated">
-                            <span class="skill-count4">65%</span>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <p>Adobe PhotoShop</p>
-                        <div class="skill-bar skill5 wow slideInLeft animated">
-                            <span class="skill-count5">80%</span>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <p>Adobe Illustrator</p>
-                        <div class="skill-bar skill6 wow slideInLeft animated">
-                            <span class="skill-count6">90%</span>
-                        </div>
-                    </div>
-            </div><!-- end of /.coloumn -->
+        </div>
         </div>
     </div>
 </body>
