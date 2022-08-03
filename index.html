@@ -18,149 +18,88 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="cd-header">
+		<div class="header-wrapper">
+            <div class="logo-wrap">
+				<a href="index.html" class="hover-target"><span>HAN</span>YERIN</a>
+			</div>
 
-        <div class="header_in">
-            <div class="gbn_wrap">
-                <div class="gnb_list_w">
-                    <ul class="gnb_list">
-                        <li data-menuanchor="first"><a href="#first" class="mitem">Main</a>
-                        </li>
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
 
-                        <li data-menuanchor="second"><a href="#second" class="mitem">Introduce</a>
-                        </li>
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">MAIN</a></li>
+				<li class="nav__list-item"><a href="introduce.html" class="hover-target">INTRODUCE</a></li>
+				<li class="nav__list-item"><a href="project.html" class="hover-target">WEB PROJECTS</a></li>
+				<li class="nav__list-item"><a href="graphic.html" class="hover-target">GRAPHIC PROJECTS</a></li>
+			</ul>
+		</div>
+	</div>		
 
-                        <li data-menuanchor="third"><a href="project.html" class="mitem">WebSite Projects</a>
-                        </li>
+	<div class="hello-parent">
+  
+		<svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
+		  
+		  
+		  <g id="H-letter">
+		  <line class="H-left-stroke" x1="17" y1="0" x2="17" y2="124" stroke="#fff" fill="none" stroke-width="34" />
+		  <line class="H-mid-stroke" x1="33" y1="62" x2="68" y2="62" stroke="#fff" fill="none" stroke-width="34" />
+		  <line class="H-right-stroke" x1="84" y1="0" x2="84" y2="124" stroke="#fff" fill="none" stroke-width="34" />
+		  </g>
+		  
+		  <g id="E-letter">
+			<line class="E-left-stroke" x1="138" y1="0" x2="138" y2="124" stroke="#fff" fill="none" stroke-width="34" />
+			<line class="E-top-stroke" x1="154" y1="17" x2="201" y2="17" stroke="#fff" fill="none" stroke-width="34" />
+			<line class="E-mid-stroke" x1="154" y1="62" x2="196" y2="62" stroke="#fff" fill="none" stroke-width="34" />
+			<line class="E-bottom-stroke" x1="154" y1="107" x2="201" y2="107" stroke="#fff" fill="none" stroke-width="34" />
+		  </g>
+		  
+		  <g id="L-one-letter">
+			<line class="L-one-long-stroke" x1="17" y1="153" x2="17" y2="277" stroke="#fff" fill="none" stroke-width="34" />
+			<line class="L-one-short-stroke" x1="33" y1="260" x2="77" y2="260" stroke="#fff" fill="none" stroke-width="34" />
+		  </g>
+		  
+		  <g id="L-two-letter">
+			<line class="L-two-long-stroke" x1="104" y1="153" x2="104" y2="277" stroke="#fff" fill="none" stroke-width="34" />
+			<line class="L-two-short-stroke" x1="120" y1="260" x2="164" y2="260" stroke="#fff" fill="none" stroke-width="34" />
+		  </g>
+		  
+		  <g id="O-letter">
+			<circle class="O-stroke" cx="231" cy="215" r="48" stroke="#fff" fill="none" stroke-width="31" />
+		  </g>
+		  
+		  <g id="red-dot">
+			<!-- Initially I tried creating a circle but it was harder to manipulate it how I wanted to in CSS so I resorted to using a line trick to make it look like a circle ....
+			
+			<circle class="red-dot" cx="325" cy="260" r="20" fill="#FF5851" stroke="none" />
+		
+			-->
+			
+			<line x1="325" y1="260" x2="325" y2="260" stroke="#FF5851" class="red-dot" />
+		  </g>
+		  
+		  
+		</svg>
+	</div>
+		
+	<div class="title">
+		<h1>WEB PUBLISHER<br>WEB DESIGN<br><span>PORTFOLIO</span></h1>
+	</div>
 
-                        <li data-menuanchor="fourth"><a href="graphic.html" class="mitem">Graphic Projects</a>
-                        </li>
-                    </ul>
-                </div><!-- .gnb_list_w end-->
-            </div><!-- .gbn_wrap END-->
-        </div><!-- .header_in END-->
-    </header>
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
 
 
-    <div id="fullpage">
-        <div class="section" id="s1">
-            <div class="starfield">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="headline">
-                <h1 data-text="black mirror">
-                    <span>PORTFOLIO</span>
-                </h1>
-                <p>WEB PUBLISHER & WEB DESIGN</p>
-            </div>
-        </div>
-
-        <div class="section" id="s2">
-            <div class="s2_w">
-                <div class="s2_in">
-                    <div class="s2_title_w">
-                        <div class="s2_title">
-                            <h2>Introduce</h2>
-                            <div class="bar"></div>
-                            <p>안녕하세요. 신입 웹퍼블리셔 한예린입니다.<br>
-                                이 포트폴리오에서는 퍼블리셔를 꿈꾸며 준비한,<br>
-                                저의 노력의 결과인 작업물들을 보실 수 있습니다.🙂</p>
-                        </div>
-                    </div>
-
-                    <div class="s2_cont">
-                        <div class="s2_item_cont">
-                            <ul class="s2_list">
-                                <li>
-                                    <div class="s2_item s2_item01">
-                                        <h2>Name</h2>
-                                        <p>한 예 린 (Han Yerin)</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="s2_item s2_item02">
-                                        <h2>Birth</h2>
-                                        <p>1994.09.22(Age 29)</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="s2_item s2_item03">
-                                        <h2>Address</h2>
-                                        <p>경기도 이천시 송정동</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="s2_item s2_item04">
-                                        <h2>E-mail</h2>
-                                        <p>hanyerin94@naver.com</p>
-                                    </div>
-                                </li>
-                                <button class="glow-on-hover" type="button"><a href="https://www.canva.com/design/DAFHYFtif1E/cQ1wmasofhDw_9A3yvzNGQ/view?utm_content=DAFHYFtif1E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Overview Resume</a></button>
-                            </ul>
-                        </div>
-
-                    </div> 
-                </div>
-            </div>
-
-            <div class="s2_image"></div>
-
-            <div id="txt_container">
-                <div id="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                        <defs>
-                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
-                        </defs>
-                        <circle cx="150" cy="100" r="75" fill="none"/>
-                        <g>
-                            <use xlink:href="#circlePath" fill="none"/>
-                            <text fill="#fff">
-                                <textPath xlink:href="#circlePath">YERIN HAN - 1994.09.22 AGE 29</textPath>
-                            </text>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="section" id="s3">
-            <h2>Useable Tools</h2>
-            <div class="bar"></div>
-            <p class="desc">현재 다룰 수 있는 skill입니다.<br>
-            이 외에도  Sass, Vue, Git, Zeplin 등 생산성과 협업을 위한<br>지식을 계속 공부하고 있습니다.📚</p>
-            <div class="container">
-                <div class="container-fluid" id="skills">
-                    <div class="row">
-                        <div class="col-lg-12">
-                        <div class="skills-text">
-                            <dl class="skills-list">
-                                <dt class="skill-name">HTML</dt>
-                                <dd class="skill-percent skill-percent-html" data-percent="90%"></dd>
-                                <dt class="skill-name">CSS</dt>
-                                <dd class="skill-percent skill-percent-css" data-percent="88%"></dd>
-                                <dt class="skill-name">jQuery</dt>
-                                <dd class="skill-percent skill-percent-jquery" data-percent="48%"></dd>
-                                <dt class="skill-name">Javascript</dt>
-                                <dd class="skill-percent skill-percent-javascript" data-percent="48%"></dd>
-                                <dt class="skill-name">Photoshop</dt>
-                                <dd class="skill-percent skill-percent-wordpress" data-percent="90%"></dd>
-                                <dt class="skill-name">Illustrator</dt>
-                                <dd class="skill-percent skill-percent-php" data-percent="95%"></dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
 </body>
 </html>

@@ -6,17 +6,13 @@ new fullpage('#fullpage', {
     sectionsColor: ['#111', '#111'],
     navigation: true,
 	navigationPosition: 'right',
-    navigationTooltips: ['Main','Introduce','Useable Tools'], 
+    navigationTooltips: ['Introduce','Useable Tools'], 
     easing: 'easeInOutCubic',
-    anchors: ['first', 'second', 'third', 'fourth'],
+    anchors: ['first', 'second'],
     menu: '.gnb_list',
     normalScrollElements: '#s1', //오토스크롤이 아니라 정상 스크롤이 작동
     responsiveHeight:350, //세로가 특정 수치보다 작아졌을 때 autoscroll 작동x
 });
-
-
-
-
 
 
 (function($) { "use strict";
@@ -31,7 +27,6 @@ new fullpage('#fullpage', {
 		i.style.left = n.clientX + "px", 
 		i.style.top = n.clientY + "px"
     });
-
     var t = document.getElementById("cursor"),
         e = document.getElementById("cursor2"),
         i = document.getElementById("cursor3");
@@ -48,8 +43,6 @@ new fullpage('#fullpage', {
     function o(t) {
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
-	
-
 	
 	//Navigation
 
